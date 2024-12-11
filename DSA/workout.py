@@ -68,7 +68,7 @@
 # li.add_node(10)
 # li.add_node(20)
 # li.add_node(30)
-# li.add_node(40)
+# # li.add_node(40)
 
-# li.display()
+# # li.display()
 
