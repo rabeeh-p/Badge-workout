@@ -41,3 +41,22 @@
 
 
 
+# for i in range(5):
+#     print(f"{i}"* i)
+
+
+
+# for i in range(5):
+#     for k in range(5 - i):
+#         print(' ', end="")
+    
+#     for j in range(2 * i - 1):
+#         print("*",end="")
+#     print()
+
+# for i in range(5,0,-1):
+#     print("*"* i)
+
+num = None
+if not num:
+    print('is true')

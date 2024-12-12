@@ -43,3 +43,19 @@
 
 
 # Myclass.sample()
+
+# -------------------------------------------  oops ended----------------------
+
+
+
+
+# def sample():
+#     yield 10
+#     yield 20
+#     yield 30
+
+# new = sample()
+# print(next(new))
+# print(next(new))
+# print(next(new))
+
