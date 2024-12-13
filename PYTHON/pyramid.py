@@ -57,6 +57,8 @@
 # for i in range(5,0,-1):
 #     print("*"* i)
 
-num = None
-if not num:
-    print('is true')
+# num = None
+# if not num:
+#     print('is true')
+
+
