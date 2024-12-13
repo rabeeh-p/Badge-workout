@@ -59,3 +59,13 @@
 # print(next(new))
 # print(next(new))
 
+# my_dict = {"a": 10, "b": 15, "c": 5}
+# del my_dict[max(my_dict, key=my_dict.get)]
+
+# print(my_dict)
+
+# my_dict = {"a": 10, "b": 15, "c": 5,'a':6}
+
+# resutl = {x: y for x, y in my_dict.items() if y != max(my_dict.values())}
+# print(my_dict)
+# print(resutl)
