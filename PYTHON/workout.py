@@ -69,3 +69,7 @@
 # resutl = {x: y for x, y in my_dict.items() if y != max(my_dict.values())}
 # print(my_dict)
 # print(resutl)
+
+
+
+
