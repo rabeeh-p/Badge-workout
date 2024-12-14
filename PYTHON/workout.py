@@ -76,3 +76,63 @@
 # name = 'madam'
 
 # print(name == name[::-1])
+
+
+# 54321
+#  4321
+#   321
+#    21
+#     1
+
+
+
+# for i in range(5):
+#     print(' ' * i, end='')
+
+#     for j in range(5-i,0 ,-1):
+#         print(j,end='')
+#     print()
+
+
+# for i in range(1,5):
+    
+#     for j in range(1,i):
+#         print(j,end='')
+#     print()
+
+
+
+# n = 7  # Maximum number of stars in the first row
+# for i in range(n, 0, -2):
+#     # Print spaces
+#     print(" " * ((n - i) // 2), end="")
+#     # Print stars
+#     print("*" * i)
+
+
+
+
+# REVERSE STRING
+# def sample(name):
+#     return name[::-1]
+
+# print(sample('hello'))
+
+
+# PALLINDROM
+# name= 'lol'
+# def sample(name):
+#     for i in range(len(name)):
+#         if name[i] != name[len(name)-i-1]:
+#             return False
+#     return True
+
+# print(sample(name))
+
+for i in range(5):
+    print("  " * i ,end='')
+
+    for j in range(5-i * 2):
+        print("* " ,end="")
+    
+    print()
