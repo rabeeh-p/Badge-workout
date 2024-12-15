@@ -70,3 +70,9 @@
 # sample = {'a':10,'b':20,'c':30}
 # result = {x:y for x , y in sample.items() if y != max(sample.values())}
 # print(result)
+
+for i in range(5,0,-1):
+
+    for j in range(i):
+        print("*", end='')
+    print()
