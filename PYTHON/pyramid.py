@@ -64,4 +64,9 @@
 
 
 
-print('hello')
+# print('hello')
+
+
+# sample = {'a':10,'b':20,'c':30}
+# result = {x:y for x , y in sample.items() if y != max(sample.values())}
+# print(result)
