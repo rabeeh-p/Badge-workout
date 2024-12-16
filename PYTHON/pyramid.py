@@ -94,3 +94,9 @@
 #         return 1
 #     return n * fac(n-1)
 # print(fac(5))
+
+
+def revers_string(item):
+    return item[::-1]
+
+print(revers_string('rabeeh'))
