@@ -96,7 +96,50 @@
 # print(fac(5))
 
 
-def revers_string(item):
-    return item[::-1]
+# def revers_string(item):
+#     return item[::-1]
 
-print(revers_string('rabeeh'))
+# print(revers_string('rabeeh'))
+
+
+# def largest_value(arr):
+#     big= arr[0]
+#     for i in arr:
+#         if i > big:
+#             big = i
+#     return big
+
+# arr=[1,2,3,4,5]
+# print(largest_value(arr))
+
+
+# def is_pallindrom(item):
+#     return item == item[::-1]
+
+# print(is_pallindrom('lloll'))
+
+
+
+# def count(arr):
+#     frequency = {}
+#     for i in arr:
+#         if i not in frequency:
+#             frequency[i] = 1
+#         else:
+#             frequency[i] += 1
+#     return frequency
+
+# arr= [1,2,3,1,2,5,6,7]
+# print(count(arr))
+
+
+
+# def sorting(item):
+#     for i in range(len(item)):
+#         for j in range(i+1, len(item)):
+#             if item[i] > item[j]:
+#                 item[i],item[j] = item[j],item[i]
+#     return item
+
+# arr= [5,4,3,2,1]
+# print(sorting(arr))
