@@ -75,3 +75,15 @@
 #     for j in range(i):
 #         print("*", end='')
 #     print()
+
+
+
+# def is_prime(num):  
+#     is_prime_flag = True
+#     for i in range(2, num):
+#         if num % i == 0:
+#             is_prime_flag = False
+#             break
+#     return is_prime_flag
+
+# print(is_prime(7))
