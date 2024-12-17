@@ -31,3 +31,6 @@
 
 # RIGHT JOIN
 # select students.name,department.course from students right join department on students.student_id = department.id
+
+
+

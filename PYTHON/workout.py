@@ -129,10 +129,24 @@
 
 # print(sample(name))
 
-for i in range(5):
-    print("  " * i ,end='')
+# for i in range(5):
+#     print("  " * i ,end='')
 
-    for j in range(5-i * 2):
-        print("* " ,end="")
+#     for j in range(5-i * 2):
+#         print("* " ,end="")
     
-    print()
+#     print()
+
+# name = {'a':10,'b': 20}
+# name2 = {'c':10,'c': 20}
+
+# # result = name + name2
+# # name.update(name2)
+# name.add({'d':2})
+# print(name)
+
+
+# numbers= [1,2,3,4]
+# numbers2= [1,2,3,4]
+# result = numbers + numbers2
+# print(result)
