@@ -151,3 +151,54 @@
 # result = numbers + numbers2
 # print(result)
 
+
+# name = 'Lorem Ipsum is simply dummy'
+
+
+
+# print(name.title())
+
+# final = name.split()
+# print(final)
+# result = {}
+
+# for i in final:
+#     result[i] = len(i)
+
+# print(result)
+
+# result ={ x:len(x) for x in name.split()}
+# print(result)
+
+# numbers = [1,2,3,3,1,2,123,23,[12,12,1,[1,2,3],2],2,[[2]]]
+# new =[]
+# for i in numbers:
+#     if i.isinstance(list):
+#         for j in i :
+#             new.append(j)
+#     else:
+#         new.append(i)
+
+# print(new)
+
+# def flatten_list(data):
+#     flat_list = []
+#     for item in data:
+#         if isinstance(item, list):
+#             flat_list.extend(flatten_list(item))  
+#         else:
+#             flat_list.append(item) 
+#     return flat_list
+
+# # Input list
+# numbers = [1, 2, 3, 3, 1, 2, 123, 23, [12, 12, 1, [1, 2, 3], 2], 2, [[2]]]
+
+
+# for i in range(5):
+
+#     for k in range(i):
+#         print(' ',end='')
+
+#     for j in range(5-i):
+#         print('* ',end='')
+#     print()
