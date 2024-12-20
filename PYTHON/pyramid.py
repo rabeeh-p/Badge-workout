@@ -154,3 +154,9 @@ for i in range(5):
     for k in range(5-i):
         print("* ", end='')
     print()
+
+
+name = {'a': 10, 'b': 20, 'c':30}
+
+result = {x:y for x,y in name.items() if y != max(name.values())}
+print(result)
