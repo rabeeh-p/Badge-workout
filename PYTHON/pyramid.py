@@ -148,15 +148,15 @@
 
 
 
-for i in range(5):
-    for j in range(i):
-        print(' ',end='')
-    for k in range(5-i):
-        print("* ", end='')
-    print()
+# for i in range(5):
+#     for j in range(i):
+#         print(' ',end='')
+#     for k in range(5-i):
+#         print("* ", end='')
+#     print()
 
 
-name = {'a': 10, 'b': 20, 'c':30}
+# name = {'a': 10, 'b': 20, 'c':30}
 
-result = {x:y for x,y in name.items() if y != max(name.values())}
-print(result)
+# result = {x:y for x,y in name.items() if y != max(name.values())}
+# print(result)
