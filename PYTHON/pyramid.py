@@ -143,3 +143,14 @@
 
 # arr= [5,4,3,2,1]
 # print(sorting(arr))
+
+
+
+
+
+for i in range(5):
+    for j in range(i):
+        print(' ',end='')
+    for k in range(5-i):
+        print("* ", end='')
+    print()
