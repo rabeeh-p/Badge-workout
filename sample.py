@@ -76,3 +76,4 @@ print(dict1)
 
 # python_obj = Student.objects.prefetch_related('students').filter(title= 'python')
 
+
