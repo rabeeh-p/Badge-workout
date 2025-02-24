@@ -17,20 +17,25 @@
 
 # print(merge_sort(numbers))
     
-# num = 1
-# for i in range(5):
-#     for j in range(i):
-#         print(num, end='')
-#         num += 1
+num = 1
 
-#     print()
+for i in range(5):
+    for j in range(i):
+        print(num, end='')
+        num += 1
+
+    print()
 
 
-# dict1 = {'a': 1, 'b': 2}
-# dict2 = {'b': 3, 'c': 4}
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
 
-# dict1.update(dict2)
+dict1.update(dict2)
+print(dict1)
+# dict1.add(dict2)
 # print(dict1)
+
+
 
 
 # number = [1,2,3,4,5]
