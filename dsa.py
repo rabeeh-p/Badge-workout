@@ -177,3 +177,7 @@ print(result)
 
 
 
+def sample():
+    print('hello')
+
+sample()
