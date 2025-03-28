@@ -6,7 +6,3 @@ def hello():
 
 hello()
 
-
-
-
-
