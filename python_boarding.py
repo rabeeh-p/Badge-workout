@@ -12,12 +12,26 @@
 
 
 
-def sample():
-    yield 10
-    yield 20
+# def sample():
+#     yield 10
+#     yield 20
 
 
-new= sample()
+# new= sample()
 
-print(next(new))
-print(next(new))
+# print(next(new))
+# print(next(new))
+
+
+arr = [4,3,7,9,2]
+def bubble_sort(arr):
+
+    for i in range(len(arr)):
+
+        for j in range(len(arr)-i-1):
+
+            if arr[j] > arr[j+1]:
+                arr[j] , arr[j+1]=  arr[j+1], arr[j]
+    return arr
+
+print(bubble_sort(arr))
