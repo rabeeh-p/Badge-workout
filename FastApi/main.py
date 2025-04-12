@@ -47,3 +47,7 @@ def delete_task(task_id: int):
             del tasks[i]
             return {"message": "Task deleted successfully"}
     raise HTTPException(status_code=404, detail="Task not found")
+
+
+
+
