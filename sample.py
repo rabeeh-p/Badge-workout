@@ -82,3 +82,9 @@ def sample(word):
     return print(word)
 
 sample('rabeeh')
+
+
+
+
+
+
