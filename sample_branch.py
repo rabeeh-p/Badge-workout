@@ -8,17 +8,17 @@
 
 
 
-class HashTable:
+# class HashTable:
 
-    def __init__(self,size= 2):
-        self.size = size
-        # self.table = [[] for  _ in range(self.size)]
-        self.table =[None] * self.size 
+#     def __init__(self,size= 2):
+#         self.size = size
+#         # self.table = [[] for  _ in range(self.size)]
+#         self.table =[None] * self.size 
 
     
 
-    def hash_function(self,key):
-        return hash(key) % self.size
+#     def hash_function(self,key):
+#         return hash(key) % self.size
     
 
     # def insert(self,key,value):
@@ -139,5 +139,12 @@ class HashTable:
 # word = 'hello world'
 # reversed_words= ' '.join([w[::-1] for w in word.split()])
 # print(reversed_words)
+
+
+
+
+
+
+
 
 
