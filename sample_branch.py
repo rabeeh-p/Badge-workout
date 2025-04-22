@@ -133,18 +133,9 @@
 
 
 
-# sqquare = [x*x for x in range(1,5)]
-# print(sqquare)
-
-# word = 'hello world'
-# reversed_words= ' '.join([w[::-1] for w in word.split()])
-# print(reversed_words)
 
 
 
 
-
-
-
-
-
+# numbers = [i for i in range(10)]
+# print(numbers)
