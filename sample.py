@@ -84,19 +84,5 @@ def sample(word):
 sample('rabeeh')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print('is working')
 
