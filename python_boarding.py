@@ -19,9 +19,6 @@
 
 # new= sample()
 
-# print(next(new))
-# print(next(new))
-
 
 
 
