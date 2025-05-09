@@ -12,13 +12,6 @@
 
 
 
-# def sample():
-#     yield 10
-#     yield 20
-
-
-# new= sample()
-
 
 
 
