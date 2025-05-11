@@ -1,7 +1,8 @@
+# new file created
 
-# import datetime
-# from datetime import datetime,timedelta
-
+names= ['rabeeh','aliya','aban']
+for i,k in enumerate(names):
+    print(f'{i} index. value  {k}')
 
 
 
