@@ -7,15 +7,3 @@ for i,k in enumerate(names):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
