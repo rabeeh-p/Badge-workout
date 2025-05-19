@@ -7,7 +7,4 @@ names= ['rabeeh','aliya','aban']
 
 
 
-for i in range(len(names)):
-    print(names[i])
-
 
