@@ -5,3 +5,23 @@ names= ['rabeeh','aliya','aban']
 #     print(f'{i} index. value  {k}')
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
