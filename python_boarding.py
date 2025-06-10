@@ -53,16 +53,13 @@ class HashTable:
         self.table = [None] * size
 
     def _hash(self, key):
-        """Simple hash function"""
         return hash(key) % self.size
 
     def insert(self, key, value):
-        """Insert key-value pair into the hashtable"""
         index = self._hash(key)
         if self.table[index] is None:
             self.table[index] = [(key, value)]
         else:
-            # Handle collision using chaining
             for i, (k, v) in enumerate(self.table[index]):
                 if k == key:
                     self.table[index][i] = (key, value)
@@ -70,7 +67,6 @@ class HashTable:
             self.table[index].append((key, value))
 
     def get(self, key):
-        """Retrieve value for a given key"""
         index = self._hash(key)
         if self.table[index] is not None:
             for k, v in self.table[index]:
@@ -79,7 +75,6 @@ class HashTable:
         return None
 
     def delete(self, key):
-        """Remove key-value pair"""
         index = self._hash(key)
         if self.table[index] is not None:
             for i, (k, _) in enumerate(self.table[index]):
