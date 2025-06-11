@@ -91,10 +91,13 @@
 
 
 
-names= ['rabeeh',23]
+# names= ['rabeeh',23]
 
-for i , k in enumerate(names):
-    print(i,k)
+# for i , k in enumerate(names):
+#     print(i,k)
+
+
+
 
 
 
