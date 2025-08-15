@@ -110,7 +110,7 @@ def binary_search(arr,target):
         result = binary_search(arr[mid+1:],target)
         return mid + 1 + result if result != -1 else -1
     else:
-        return binary_search()
+        return binary_search(arr[:mid],target)
 
 arr= [1,2,3,4,5,6,7,8,9,10]
 
