@@ -177,7 +177,3 @@ obj.display()
 
 
 
-# def sample():
-#     print('hello')
-
-# sample()
