@@ -136,12 +136,12 @@ obj.display()
 
 
 
-for i in range(2, 100):
-    for k in range(2, i):
-        if i % k == 0:
-            break  # Not a prime number
-    else:
-        print(i)  # Prime number
+# for i in range(2, 100):
+#     for k in range(2, i):
+#         if i % k == 0:
+#             break  # Not a prime number
+#     else:
+#         print(i)  # Prime number
 
 
 
