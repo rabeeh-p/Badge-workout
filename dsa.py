@@ -66,34 +66,35 @@
 # flat = [item for sublist in lst for item in sublist]
 # print(flat)
 
-class HashTable:
-    def __init__(self,size=10):
-        self.size= size
-        self.table= [[] for _ in range(self.size)]
+# class HashTable:
+#     def __init__(self,size=10):
+#         self.size= size
+#         self.table= [[] for _ in range(self.size)]
         
-    def hash_function(self,key):
-        return hash(key) % self.size
+#     def hash_function(self,key):
+#         return hash(key) % self.size
         
-    def insert(self,key,value):
-        index = self.hash_function(key)
+#     def insert(self,key,value):
+#         index = self.hash_function(key)
         
-        for pair in self.table[index]:
-            if pair[0] == key:
-                pair[1] = value
-                return
-        self.table[index].append([key,value])
+#         for pair in self.table[index]:
+#             if pair[0] == key:
+#                 pair[1] = value
+#                 return
+#         self.table[index].append([key,value])
         
     
-    def display(self):
-        for i , k in enumerate(self.table):
-            print(f" {i}: {k}")
+#     def display(self):
+#         for i , k in enumerate(self.table):
+#             print(f" {i}: {k}")
             
 
-obj = HashTable()
-obj.insert('apple',10)
-obj.insert('apple',20)
+# obj = HashTable()
+# obj.insert('apple',10)
+# obj.insert('apple',20)
+# obj.insert('orange',10)
 
-obj.display()
+# obj.display()
 
 
 # def binary_search(arr,target):
