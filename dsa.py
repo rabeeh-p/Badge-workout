@@ -92,7 +92,6 @@ class HashTable:
 obj = HashTable()
 obj.insert('apple',10)
 obj.insert('apple',20)
-obj.insert('orange',10)
 
 obj.display()
 
