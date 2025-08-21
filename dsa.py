@@ -117,20 +117,20 @@
 # print(binary_search(arr,9))
 
 
-# def checking(word1,word2):
+def checking(word1,word2):
     
-#     name1= word1.replace(' ','').lower()
-#     name2= word2.replace(' ','').lower()
-#     return sorted(name1) == sorted(name2)
+    name1= word1.replace(' ','').lower()
+    name2= word2.replace(' ','').lower()
+    return sorted(name1) == sorted(name2)
     
     
-# print(checking('Listen','Silent'))
+print(checking('Listen','Silent'))
 
 
 
-result = lambda a,b: a+b
+# result = lambda a,b: a+b
 
-print(result(10,20))
+# print(result(10,20))
 
 
 
