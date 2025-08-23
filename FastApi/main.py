@@ -32,6 +32,7 @@ def create_task(task: Task):
     task_id_counter += 1
     return new_task
 
+@app.put("/tasks/{task_id}", response_model=TaskOut, tags=["Tasks"])
 def update_task(task_id: int, updated_task: Task):
     for task in tasks:
         if task["id"] == task_id:
