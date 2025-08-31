@@ -9,9 +9,9 @@ tasks = []
 task_id_counter = 1
 
 # Pydantic model
-class Task(BaseModel):
-    title: str
-    completed: bool = False
+# class Task(BaseModel):
+#     title: str
+#     completed: bool = False
 
 class TaskOut(Task):
     id: int
@@ -24,7 +24,13 @@ def read_root():
 def get_tasks():
     return tasks
 
-
+@app.post("/tasks", response_model=TaskOut, tags=["Tasks"])
+def create_task(task: Task):
+    global task_id_counter
+    new_task = {"id": task_id_counter, **task.dict()}
+    tasks.append(new_task)
+    task_id_counter += 1
+    return new_task
 
 @app.put("/tasks/{task_id}", response_model=TaskOut, tags=["Tasks"])
 def update_task(task_id: int, updated_task: Task):
