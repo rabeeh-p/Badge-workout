@@ -8,7 +8,7 @@ from rest_framework import status
 
 class HelloWorldView(APIView):
     def get(self, request):
-        return Response({"message": "Hello, world!"})
+        return Response({"message": "Hello, rabeeh!"})
     
 
 class RegisterView(APIView):
