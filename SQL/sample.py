@@ -18,14 +18,14 @@
 # on delete cascade
 
 
-INNER JOIN
-selct * from students
-inner join course on students.couse_id = course.id
+# INNER JOIN
+# selct * from students
+# inner join course on students.couse_id = course.id
 
 
-# LEFT JOIN
-# select * from students
-# left join course on students.course_id = course.id
+LEFT JOIN
+select * from students
+left join course on students.course_id = course.id
 
 # RIGHT JOIN
 # select * from students
