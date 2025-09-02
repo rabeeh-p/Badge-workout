@@ -23,18 +23,18 @@
 # inner join course on students.couse_id = course.id
 
 
-LEFT JOIN
-select * from students
-left join course on students.course_id = course.id
+# LEFT JOIN
+# select * from students
+# left join course on students.course_id = course.id
 
 # RIGHT JOIN
 # select * from students
 # right join course on student.course_id = course.id
 
 
-# FULL OUTER JOIN
-# select * from sudents
-# full outer join course on student.course_id = course.id
+FULL OUTER JOIN
+select * from sudents
+full outer join course on student.course_id = course.id
 
 
 # SELF JOIN
