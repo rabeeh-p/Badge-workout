@@ -5,8 +5,8 @@ from typing import List
 app = FastAPI()
 
 # In-memory data store
-tasks = []
-task_id_counter = 1
+# tasks = []
+# task_id_counter = 1
 
 # Pydantic model
 class Task(BaseModel):

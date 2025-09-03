@@ -37,8 +37,8 @@
 # full outer join course on student.course_id = course.id
 
 
-SELF JOIN
-select e1.name , e2.name from student as e1
-join student as e2 on e1.student.id = e2.student.id
+# SELF JOIN
+# select e1.name , e2.name from student as e1
+# join student as e2 on e1.student.id = e2.student.id
 
 
