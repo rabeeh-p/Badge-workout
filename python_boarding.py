@@ -1,7 +1,7 @@
 # new file created
 
-# for i in range(5):
-#     print(i*i)
+for i in range(5):
+    print(i*i)
 
 
 # rows = 5
