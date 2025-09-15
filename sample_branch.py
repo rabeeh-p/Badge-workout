@@ -127,8 +127,8 @@
 # obj.display()
 
 
-# add = lambda x,b: x+ b
-# print(add(5,5))
+add = lambda x,b: x+ b
+print(add(5,5))
 
 
 
