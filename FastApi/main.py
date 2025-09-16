@@ -9,9 +9,9 @@ tasks = []
 task_id_counter = 1
 
 # Pydantic model
-# class Task(BaseModel):
-#     title: str
-#     completed: bool = False
+class Task(BaseModel):
+    title: str
+    completed: bool = False
 
 class TaskOut(Task):
     id: int
