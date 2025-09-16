@@ -62,9 +62,9 @@
 
 
 
-lst = [[1, 2], [3, 4,2,2,2], [5]]
-flat = [item for sublist in lst for item in sublist]
-print(flat)
+# lst = [[1, 2], [3, 4,2,2,2], [5]]
+# flat = [item for sublist in lst for item in sublist]
+# print(flat)
 
 # class HashTable:
 #     def __init__(self,size=10):
