@@ -24,12 +24,12 @@
 
 
 # LEFT JOIN
-select * from students
-left join course on students.course_id = course.id
+# select * from students
+# left join course on students.course_id = course.id
 
-RIGHT JOIN
-select * from students
-right join course on student.course_id = course.id
+# RIGHT JOIN
+# select * from students
+# right join course on student.course_id = course.id
 
 
 

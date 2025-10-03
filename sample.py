@@ -1,21 +1,21 @@
 
-# numbers = [64, 34, 25, 12, 22, 11, 90]
+numbers = [64, 34, 25, 12, 22, 11, 90]
 
 
-# def merge_sort(arr):
+def merge_sort(arr):
 
-#     if len(arr) >=1 :
+    if len(arr) >=1 :
         
       
-#         mid = len(arr) // 2
+        mid = len(arr) // 2
 
-#         left = arr[:mid]
-#         right = arr[mid:]
+        left = arr[:mid]
+        right = arr[mid:]
 
-#         return merge_sort(left) + mid + merge_sort(right)
+        return merge_sort(left) + mid + merge_sort(right)
     
 
-# print(merge_sort(numbers))
+print(merge_sort(numbers))
     
 # num = 1
 
