@@ -10,81 +10,81 @@
 
 
 
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
 
-class LinkedList:
-    def __init__(self):
-        self.head = None
+# class LinkedList:
+#     def __init__(self):
+#         self.head = None
 
-    def append(self, data):
-        new_node = Node(data)
-        if not self.head:
-            self.head = new_node
-            return
+#     def append(self, data):
+#         new_node = Node(data)
+#         if not self.head:
+#             self.head = new_node
+#             return
 
-        last = self.head
-        while last.next:
-            last = last.next
-        last.next = new_node
+#         last = self.head
+#         while last.next:
+#             last = last.next
+#         last.next = new_node
 
-    def display(self):
-        current = self.head
-        while current:
-            print(current.data, end=' -> ')
-            current = current.next
-        print("None")
+#     def display(self):
+#         current = self.head
+#         while current:
+#             print(current.data, end=' -> ')
+#             current = current.next
+#         print("None")
 
-ll = LinkedList()
-ll.append(10)
-ll.append(20)
-ll.append(30)
+# ll = LinkedList()
+# ll.append(10)
+# ll.append(20)
+# ll.append(30)
 
-ll.display()
-
-
+# ll.display()
 
 
-# class HashTable:
-#     def __init__(self, size):
-#         self.size = size
-#         self.table = [None] * size
 
-#     def _hash(self, key):
-#         return hash(key) % self.size
 
-#     def insert(self, key, value):
-#         index = self._hash(key)
-#         if self.table[index] is None:
-#             self.table[index] = [(key, value)]
-#         else:
-#             for i, (k, v) in enumerate(self.table[index]):
-#                 if k == key:
-#                     self.table[index][i] = (key, value)
-#                     return
-#             self.table[index].append((key, value))
+class HashTable:
+    def __init__(self, size):
+        self.size = size
+        self.table = [None] * size
 
-#     def get(self, key):
-#         index = self._hash(key)
-#         if self.table[index] is not None:
-#             for k, v in self.table[index]:
-#                 if k == key:
-#                     return v
-#         return None
+    def _hash(self, key):
+        return hash(key) % self.size
 
-#     def delete(self, key):
-#         index = self._hash(key)
-#         if self.table[index] is not None:
-#             for i, (k, _) in enumerate(self.table[index]):
-#                 if k == key:
-#                     del self.table[index][i]
-#                     return True
-#         return False
+    def insert(self, key, value):
+        index = self._hash(key)
+        if self.table[index] is None:
+            self.table[index] = [(key, value)]
+        else:
+            for i, (k, v) in enumerate(self.table[index]):
+                if k == key:
+                    self.table[index][i] = (key, value)
+                    return
+            self.table[index].append((key, value))
 
-#     def __str__(self):
-#         return str(self.table)
+    def get(self, key):
+        index = self._hash(key)
+        if self.table[index] is not None:
+            for k, v in self.table[index]:
+                if k == key:
+                    return v
+        return None
+
+    def delete(self, key):
+        index = self._hash(key)
+        if self.table[index] is not None:
+            for i, (k, _) in enumerate(self.table[index]):
+                if k == key:
+                    del self.table[index][i]
+                    return True
+        return False
+
+    def __str__(self):
+        return str(self.table)
 
 
 
