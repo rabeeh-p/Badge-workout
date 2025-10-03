@@ -1,7 +1,7 @@
 # create table COURSE (id bigserial primary key, course_name varchar(50));
 
-create table student (id bigserial primary key, name varchar(50),course_id int,
-constraint fk_user foreign key (course_id) referenses (course.id))
+# create table student (id bigserial primary key, name varchar(50),course_id int,
+# constraint fk_user foreign key (course_id) referenses (course.id))
 
 
 
@@ -11,11 +11,11 @@ constraint fk_user foreign key (course_id) referenses (course.id))
 # add column course_id int
 
 # ADD CONSTRAINT
-# alter table student
-# add constraint fk_user
-# foreign key (course_id)
-# referenses (course.id)
-# on delete cascade
+alter table student
+add constraint fk_user
+foreign key (course_id)
+referenses (course.id)
+on delete cascade
 
 
 # INNER JOIN
