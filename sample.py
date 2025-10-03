@@ -38,22 +38,22 @@
 
 
 
-number = [1,2,3,4,5]
+# number = [1,2,3,4,5]
 
-result = list(map(lambda x : x**2 , number))
+# result = list(map(lambda x : x**2 , number))
 
-print(result)
+# print(result)
 
-# number = [1,2,4,5]
+number = [1,2,4,5]
 
-# big = max(number)
-# print(big)
+big = max(number)
+print(big)
 
-# missing= []
-# for i in range(1,big+1):
-#     if i not in number:
-#         missing.append(i)
-# print(missing)
+missing= []
+for i in range(1,big+1):
+    if i not in number:
+        missing.append(i)
+print(missing)
 
 
 
