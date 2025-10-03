@@ -27,22 +27,22 @@
 #     print()
 
 
-dict1 = {'a': 1, 'b': 2}
-dict2 = {'b': 3, 'c': 4}
+# dict1 = {'a': 1, 'b': 2}
+# dict2 = {'b': 3, 'c': 4}
 
-dict1.update(dict2)
-print(dict1)
-dict1.add(dict2)
-print(dict1)
-
-
+# dict1.update(dict2)
+# print(dict1)
+# dict1.add(dict2)
+# print(dict1)
 
 
-# number = [1,2,3,4,5]
 
-# result = list(map(lambda x : x**2 , number))
 
-# print(result)
+number = [1,2,3,4,5]
+
+result = list(map(lambda x : x**2 , number))
+
+print(result)
 
 # number = [1,2,4,5]
 
