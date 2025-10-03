@@ -1,7 +1,7 @@
-create table COURSE (id bigserial primary key, course_name varchar(50));
+# create table COURSE (id bigserial primary key, course_name varchar(50));
 
-# create table student (id bigserial primary key, name varchar(50),course_id int,
-# constraint fk_user foreign key (course_id) referenses (course.id))
+create table student (id bigserial primary key, name varchar(50),course_id int,
+constraint fk_user foreign key (course_id) referenses (course.id))
 
 
 
