@@ -11,16 +11,16 @@
 # add column course_id int
 
 # ADD CONSTRAINT
-alter table student
-add constraint fk_user
-foreign key (course_id)
-referenses (course.id)
-on delete cascade
+# alter table student
+# add constraint fk_user
+# foreign key (course_id)
+# referenses (course.id)
+# on delete cascade
 
 
 # INNER JOIN
-# selct * from students
-# inner join course on students.couse_id = course.id
+selct * from students
+inner join course on students.couse_id = course.id
 
 
 # LEFT JOIN
