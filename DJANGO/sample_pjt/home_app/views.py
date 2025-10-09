@@ -33,8 +33,3 @@ class login(APIView):
     
 
 
-
-
-
-
-
