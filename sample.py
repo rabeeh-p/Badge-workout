@@ -60,29 +60,29 @@
 
 # from django.db import models
 
-# class Teacher(models.Model):
-#     name = models.CharField(max_length=100)
+class Teacher(models.Model):
+    name = models.CharField(max_length=100)
 
-# class Course(models.Model):
-#     title = models.CharField(max_length=100)
-#     teacher = models.ForeignKey(Teacher, related_name='courses', on_delete=models.CASCADE)
+class Course(models.Model):
+    title = models.CharField(max_length=100)
+    teacher = models.ForeignKey(Teacher, related_name='courses', on_delete=models.CASCADE)
 
-# class Student(models.Model):
-#     name = models.CharField(max_length=100)
-#     courses = models.ManyToManyField(Course, related_name='students')
-
-
-# obj= Course.objects.filter(teacher__name= 'john')
-
-# python_obj = Student.objects.prefetch_related('students').filter(title= 'python')
+class Student(models.Model):
+    name = models.CharField(max_length=100)
+    courses = models.ManyToManyField(Course, related_name='students')
 
 
+obj= Course.objects.filter(teacher__name= 'john')
 
-def sample(word):
-    return print(word)
-
-sample('rabeeh')
+python_obj = Student.objects.prefetch_related('students').filter(title= 'python')
 
 
-print('is working')
+
+# def sample(word):
+#     return print(word)
+
+# sample('rabeeh')
+
+
+# print('is working')
 
