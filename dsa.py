@@ -146,11 +146,11 @@
  
 
 
-# from itertools import permutations
+from itertools import permutations
 
-# result = [ ''.join(p) for p in permutations('rab')]
+result = [ ''.join(p) for p in permutations('rab')]
 
 
-# print(result)
+print(result)
 
  
