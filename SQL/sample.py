@@ -35,8 +35,8 @@
 
 
 # FULL OUTER JOIN
-select * from sudents
-full outer join course on student.course_id = course.id
+# select * from sudents
+# full outer join course on student.course_id = course.id
 
 
 # SELF JOIN

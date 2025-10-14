@@ -1,41 +1,41 @@
 
-# class Node:
-#     def __init__(self,data):
-#         self.data = data
-#         self.next = None
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
 
 
 
-# class LinkedList:
-#     def __init__(self):
-#         self.head = None
+class LinkedList:
+    def __init__(self):
+        self.head = None
 
-#     def append(self,data):
-#         if self.head is None:
-#             self.head  = Node(data)
-#         else:
-#             current = self.head
-#             while current.next :
-#                 current = current.next
-#             current.next= Node(data)
+    def append(self,data):
+        if self.head is None:
+            self.head  = Node(data)
+        else:
+            current = self.head
+            while current.next :
+                current = current.next
+            current.next= Node(data)
     
-#     def display (self):
-#         current = self.head
-#         while current :
-#             print(current.data , end="=>")
-#             current = current.next
+    def display (self):
+        current = self.head
+        while current :
+            print(current.data , end="=>")
+            current = current.next
 
 
-# def array_to_linkdList(array):
-#     linkedList_obj = LinkedList()
-#     for i in array:
-#         linkedList_obj.append(i) 
-#     return linkedList_obj
+def array_to_linkdList(array):
+    linkedList_obj = LinkedList()
+    for i in array:
+        linkedList_obj.append(i) 
+    return linkedList_obj
 
-# array = [1,2,3,4,5]
-# hello_obj = array_to_linkdList(array)
+array = [1,2,3,4,5]
+hello_obj = array_to_linkdList(array)
 
-# hello_obj.display()
+hello_obj.display()
 
 
 
@@ -134,20 +134,20 @@
 
 
 
-def insertion(arr):
+# def insertion(arr):
 
-    for i in range(1,len(arr)):
+#     for i in range(1,len(arr)):
 
-        key = arr[i]
-        j = i -1
+#         key = arr[i]
+#         j = i -1
 
-        while j >=0 and key < arr[j]:
-            arr[j+1] = arr[j]
-            j -= 1
+#         while j >=0 and key < arr[j]:
+#             arr[j+1] = arr[j]
+#             j -= 1
         
-        arr[j+1] = key
-    return arr
+#         arr[j+1] = key
+#     return arr
 
-numbers = [4,3,2,6]
+# numbers = [4,3,2,6]
 
-print(insertion(numbers))
+# print(insertion(numbers))
