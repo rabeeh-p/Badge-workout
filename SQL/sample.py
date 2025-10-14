@@ -40,7 +40,7 @@
 
 
 # SELF JOIN
-# select e1.name , e2.name from student as e1
-# join student as e2 on e1.student.id = e2.student.id
+select e1.name , e2.name from student as e1
+join student as e2 on e1.student.id = e2.student.id
 
 
