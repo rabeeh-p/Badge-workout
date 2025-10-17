@@ -128,9 +128,9 @@
 
 
 
-# result = lambda a,b: a+b
+result = lambda a,b: a+b
 
-# print(result(10,20))
+print(result(10,20))
 
 
 
@@ -143,6 +143,7 @@ for i in range(2, 100):
 
 
 
+ 
  
 
 
