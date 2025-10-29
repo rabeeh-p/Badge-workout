@@ -97,34 +97,34 @@
 # obj.display()
 
 
-def binary_search(arr,target):
+# def binary_search(arr,target):
     
-    if not arr:
-        return -1
+#     if not arr:
+#         return -1
         
-    mid = len(arr) // 2
+#     mid = len(arr) // 2
     
-    if arr[mid] == target:
-        return mid
-    elif arr[mid] < target:
-        result = binary_search(arr[mid+1:],target)
-        return mid + 1 + result if result != -1 else -1
-    else:
-        return binary_search(arr[:mid],target)
+#     if arr[mid] == target:
+#         return mid
+#     elif arr[mid] < target:
+#         result = binary_search(arr[mid+1:],target)
+#         return mid + 1 + result if result != -1 else -1
+#     else:
+#         return binary_search(arr[:mid],target)
 
-arr= [1,2,3,4,5,6,7,8,9,10]
+# arr= [1,2,3,4,5,6,7,8,9,10]
 
-print(binary_search(arr,9))
+# print(binary_search(arr,9))
 
 
-# def checking(word1,word2):
+def checking(word1,word2):
     
-#     name1= word1.replace(' ','').lower()
-#     name2= word2.replace(' ','').lower()
-#     return sorted(name1) == sorted(name2)
+    name1= word1.replace(' ','').lower()
+    name2= word2.replace(' ','').lower()
+    return sorted(name1) == sorted(name2)
     
     
-# print(checking('Listen','Silent'))
+print(checking('Listen','Silent'))
 
 
 
