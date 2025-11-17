@@ -47,10 +47,10 @@
 
 # DATE AND TIME
 
-# from datetime import datetime, timedelta
-# n_days = 5
-# current = datetime.now() + timedelta(days=n_days)
-# print(current)
+from datetime import datetime, timedelta
+n_days = 5
+current = datetime.now() + timedelta(days=n_days)
+print(current)
 
 
 # swap = lambda s: s[-1] + s[1:-1] + s[0] if len(s) > 1 else s
