@@ -117,29 +117,29 @@
 # print(binary_search(arr,9))
 
 
-def checking(word1,word2):
+# def checking(word1,word2):
     
-    name1= word1.replace(' ','').lower()
-    name2= word2.replace(' ','').lower()
-    return sorted(name1) == sorted(name2)
+#     name1= word1.replace(' ','').lower()
+#     name2= word2.replace(' ','').lower()
+#     return sorted(name1) == sorted(name2)
     
     
-print(checking('Listen','Silent'))
+# print(checking('Listen','Silent'))
 
 
 
-# result = lambda a,b: a+b
+result = lambda a,b: a+b
 
-# print(result(10,20))
+print(result(10,20))
 
 
 
-for i in range(2, 100):
-    for k in range(2, i):
-        if i % k == 0:
-            break  # Not a prime number
-    else:
-        print(i)  # Prime number
+# for i in range(2, 100):
+#     for k in range(2, i):
+#         if i % k == 0:
+#             break  # Not a prime number
+#     else:
+#         print(i)  # Prime number
 
 
 
