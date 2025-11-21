@@ -9,7 +9,6 @@ from rest_framework import status, generics
 class HelloWorldView(APIView):
     def get(self, request):
         return Response({"message": "Hello, rabeeh!"})
-    
 
 class RegisterView(APIView):
     def post(self, request):
@@ -18,11 +17,9 @@ class RegisterView(APIView):
             user = serializer.save()
             return Response({"message": "User created successfully!"}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
  
 class RegisterView(generics.GenericAPIView):
     serializer_class = RegisterSerializer
-
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
