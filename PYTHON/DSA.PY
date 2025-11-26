@@ -1,41 +1,41 @@
 
-class Node:
-    def __init__(self,data):
-        self.data = data
-        self.next = None
+# class Node:
+#     def __init__(self,data):
+#         self.data = data
+#         self.next = None
 
 
 
-class LinkedList:
-    def __init__(self):
-        self.head = None
+# class LinkedList:
+#     def __init__(self):
+#         self.head = None
 
-    def append(self,data):
-        if self.head is None:
-            self.head  = Node(data)
-        else:
-            current = self.head
-            while current.next :
-                current = current.next
-            current.next= Node(data)
+#     def append(self,data):
+#         if self.head is None:
+#             self.head  = Node(data)
+#         else:
+#             current = self.head
+#             while current.next :
+#                 current = current.next
+#             current.next= Node(data)
     
-    def display (self):
-        current = self.head
-        while current :
-            print(current.data , end="=>")
-            current = current.next
+#     def display (self):
+#         current = self.head
+#         while current :
+#             print(current.data , end="=>")
+#             current = current.next
 
 
-def array_to_linkdList(array):
-    linkedList_obj = LinkedList()
-    for i in array:
-        linkedList_obj.append(i) 
-    return linkedList_obj
+# def array_to_linkdList(array):
+#     linkedList_obj = LinkedList()
+#     for i in array:
+#         linkedList_obj.append(i) 
+#     return linkedList_obj
 
-array = [1,2,3,4,5]
-hello_obj = array_to_linkdList(array)
+# array = [1,2,3,4,5]
+# hello_obj = array_to_linkdList(array)
 
-hello_obj.display()
+# hello_obj.display()
 
 
 
@@ -76,61 +76,61 @@ hello_obj.display()
 # print_linked_list(reversed_head)
 
 
-# class Node:
-#     def __init__(self,data):
-#         self.data = data
-#         self.next = None
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
 
 
-# class LinkedList:
-#     def __init__(self):
-#         self.head = None
+class LinkedList:
+    def __init__(self):
+        self.head = None
 
     
-#     def append(self,data):
-#         new_data = Node(data)
+    def append(self,data):
+        new_data = Node(data)
 
-#         if self.head is None:
-#             self.head = new_data
+        if self.head is None:
+            self.head = new_data
         
-#         else:
-#             current = self.head
+        else:
+            current = self.head
 
-#             while current.next :
-#                 current = current.next
+            while current.next :
+                current = current.next
             
-#             current.next = new_data
+            current.next = new_data
     
-#     def display(self):
+    def display(self):
         
-#         current = self.head
+        current = self.head
 
-#         while current :
-#             print(current.data , end=">")
-#             current = current.next
+        while current :
+            print(current.data , end=">")
+            current = current.next
 
-#     def revers(self):
-#         current = self.head
-#         prev = None
+    def revers(self):
+        current = self.head
+        prev = None
 
-#         while current :
-#             next_node = current.next
-#             current.next = prev
-#             prev = current
-#             current = next_node
+        while current :
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
 
-#         self.head = prev
+        self.head = prev
         
 
-# linkedList = LinkedList()
-# linkedList.append(1)
-# linkedList.append(2)
-# linkedList.append(3)
-# linkedList.append(4)
+linkedList = LinkedList()
+linkedList.append(1)
+linkedList.append(2)
+linkedList.append(3)
+linkedList.append(4)
 
-# # linkedList.display()
-# linkedList.revers()
 # linkedList.display()
+linkedList.revers()
+linkedList.display()
 
 
 
