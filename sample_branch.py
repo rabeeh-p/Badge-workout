@@ -1,10 +1,10 @@
 
 
-# def hello():
-#     return print('hello world')
+def hello():
+    return print('hello world')
 
 
-# hello()
+hello()
 
 
 
@@ -90,45 +90,45 @@
 
 
 
-class HashTable:
-    def __init__(self,size=5):
+# class HashTable:
+#     def __init__(self,size=5):
 
-        self.size = size
-        # self.table = [None] * size
+#         self.size = size
+#         # self.table = [None] * size
 
-        self.table= [[] for _ in range(size)]
+#         self.table= [[] for _ in range(size)]
 
     
-    def hash_function(self,key):
-        return hash(key) % self.size
+#     def hash_function(self,key):
+#         return hash(key) % self.size
     
-    def insert(self,key,value):
+#     def insert(self,key,value):
 
-        index = self.hash_function(key)
+#         index = self.hash_function(key)
 
-        for i in self.table[index]:
-            if i[0] == key:
-                i[0] = value
-                return
+#         for i in self.table[index]:
+#             if i[0] == key:
+#                 i[0] = value
+#                 return
         
-        self.table[index].append([key,value])
+#         self.table[index].append([key,value])
 
 
-    def display(self):
-        for i,k in enumerate(self.table):
+#     def display(self):
+#         for i,k in enumerate(self.table):
 
-            print(f'{i} => {k}')
+#             print(f'{i} => {k}')
         
 
-obj = HashTable()
-obj.insert('apple',10)
-obj.insert('orange',10)
+# obj = HashTable()
+# obj.insert('apple',10)
+# obj.insert('orange',10)
 
-obj.display()
+# obj.display()
 
 
-add = lambda x,b: x+ b
-print(add(5,5))
+# add = lambda x,b: x+ b
+# print(add(5,5))
 
 
 
