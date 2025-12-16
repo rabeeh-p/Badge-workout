@@ -16,9 +16,9 @@ class Task(BaseModel):
 class TaskOut(Task):
     id: int
 
-@app.get("/", tags=["Root"])
-def read_root():
-    return {"message": "Welcome to FastAPI ToDo App"}
+# @app.get("/", tags=["Root"])
+# def read_root():
+#     return {"message": "Welcome to FastAPI ToDo App"}
 
 @app.get("/tasks", response_model=List[TaskOut], tags=["Tasks"])
 def get_tasks():
