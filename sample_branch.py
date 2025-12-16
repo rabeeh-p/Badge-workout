@@ -8,51 +8,51 @@
 
 
 
-class HashTable:
+# class HashTable:
 
-    def __init__(self,size= 2):
-        self.size = size
-        # self.table = [[] for  _ in range(self.size)]
-        self.table =[None] * self.size 
+#     def __init__(self,size= 2):
+#         self.size = size
+#         # self.table = [[] for  _ in range(self.size)]
+#         self.table =[None] * self.size 
 
     
 
-    def hash_function(self,key):
-        return hash(key) % self.size
+#     def hash_function(self,key):
+#         return hash(key) % self.size
     
 
-    def insert(self,key,value):
-        index = self.has_function(key)
-        for pair in self.table[index]:
-            if pair[0] == key:
-                pair[0] = value
-                return
+    # def insert(self,key,value):
+    #     index = self.has_function(key)
+    #     for pair in self.table[index]:
+    #         if pair[0] == key:
+    #             pair[0] = value
+    #             return
             
-        self.table[index].append([key,value])
+    #     self.table[index].append([key,value])
 
-    def insert(self, key, value):
-        index = self.hash_function(key)
+#     def insert(self, key, value):
+#         index = self.hash_function(key)
 
-        while self.table[index] is not None:
-            stored_key, _ = self.table[index]
-            if stored_key == key:  
-                self.table[index] = (key, value)
-                return
-            index = (index + 1) % self.size  
+#         while self.table[index] is not None:
+#             stored_key, _ = self.table[index]
+#             if stored_key == key:  
+#                 self.table[index] = (key, value)
+#                 return
+#             index = (index + 1) % self.size  
 
-        # Insert new key-value pair
-        self.table[index] = (key, value)
+#         # Insert new key-value pair
+#         self.table[index] = (key, value)
 
-    def display(self):
-        for i, bucket in enumerate(self.table):
-            print(f'{i}== {bucket}')
+#     def display(self):
+#         for i, bucket in enumerate(self.table):
+#             print(f'{i}== {bucket}')
 
-obj = HashTable()
+# obj = HashTable()
 
-obj.insert('apple',10)
-obj.insert('oragne',20)
-# obj.insert('pinappl',30)
-obj.display()
+# obj.insert('apple',10)
+# obj.insert('oragne',20)
+# # obj.insert('pinappl',30)
+# obj.display()
                 
 # class HashTable:
 #     def __init__(self, size=2):
@@ -127,8 +127,8 @@ obj.display()
 # obj.display()
 
 
-# add = lambda x,b: x+ b
-# print(add(5,5))
+add = lambda x,b: x+ b
+print(add(5,5))
 
 
 
