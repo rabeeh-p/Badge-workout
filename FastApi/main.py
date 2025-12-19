@@ -25,8 +25,6 @@ def get_tasks():
     return tasks
 
 
-
-
 @app.post("/tasks", response_model=TaskOut, tags=["Tasks"])
 def create_task(task: Task):
     global task_id_counter
@@ -43,6 +41,8 @@ def update_task(task_id: int, updated_task: Task):
             return task
     raise HTTPException(status_code=404, detail="Task not found")
 
+
+
 @app.delete("/tasks/{task_id}", tags=["Tasks"])
 def delete_task(task_id: int):
     for i, task in enumerate(tasks):
@@ -50,6 +50,4 @@ def delete_task(task_id: int):
             del tasks[i]
             return {"message": "Task deleted successfully"}
     raise HTTPException(status_code=404, detail="Task not found")
-
-
 
