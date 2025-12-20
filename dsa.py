@@ -1,45 +1,45 @@
 
-# class HashTable:
-#     def __init__(self,size=2):
-#         self.size= size
-#         self.table = [[] for _ in range(self.size)]
+class HashTable:
+    def __init__(self,size=2):
+        self.size= size
+        self.table = [[] for _ in range(self.size)]
 
-#     def hash_table(self,key):
-#         return hash(key) % self.size
-
-    
-#     def insert(self,key,value):
-#         index = self.hash_table(key)
-
-#         for pair in self.table[index]:
-#             if pair[0] == key:
-#                 pair[1] = value
-#                 return
-#         self.table[index].append([key,value])
+    def hash_table(self,key):
+        return hash(key) % self.size
 
     
-#     def display(self):
-#         for i ,bucket in enumerate(self.table):
-#             print(f'Bucket {i}: {bucket}')
+    def insert(self,key,value):
+        index = self.hash_table(key)
 
-#     def remove_data(self,key):
-#         index = self.hash_table(key)
-
-#         for pair in self.table[index]:
-#             if pair[0] == key:
-#                 self.table[index].remove(pair)
-#                 return True
-#         return False
+        for pair in self.table[index]:
+            if pair[0] == key:
+                pair[1] = value
+                return
+        self.table[index].append([key,value])
 
     
-# hash_obj = HashTable()
-# hash_obj.insert('apple',10)
-# hash_obj.insert('orange',20)
-# hash_obj.insert('pineple',30)
-# hash_obj.insert('carrot',30)
+    def display(self):
+        for i ,bucket in enumerate(self.table):
+            print(f'Bucket {i}: {bucket}')
 
-# hash_obj.remove_data('carrot')
-# hash_obj.display()
+    def remove_data(self,key):
+        index = self.hash_table(key)
+
+        for pair in self.table[index]:
+            if pair[0] == key:
+                self.table[index].remove(pair)
+                return True
+        return False
+
+    
+hash_obj = HashTable()
+hash_obj.insert('apple',10)
+hash_obj.insert('orange',20)
+hash_obj.insert('pineple',30)
+hash_obj.insert('carrot',30)
+
+hash_obj.remove_data('carrot')
+hash_obj.display()
         
 
 
@@ -97,24 +97,24 @@
 # obj.display()
 
 
-def binary_search(arr,target):
+# def binary_search(arr,target):
     
-    if not arr:
-        return -1
+#     if not arr:
+#         return -1
         
-    mid = len(arr) // 2
+#     mid = len(arr) // 2
     
-    if arr[mid] == target:
-        return mid
-    elif arr[mid] < target:
-        result = binary_search(arr[mid+1:],target)
-        return mid + 1 + result if result != -1 else -1
-    else:
-        return binary_search(arr[:mid],target)
+#     if arr[mid] == target:
+#         return mid
+#     elif arr[mid] < target:
+#         result = binary_search(arr[mid+1:],target)
+#         return mid + 1 + result if result != -1 else -1
+#     else:
+#         return binary_search(arr[:mid],target)
 
-arr= [1,2,3,4,5,6,7,8,9,10]
+# arr= [1,2,3,4,5,6,7,8,9,10]
 
-print(binary_search(arr,9))
+# print(binary_search(arr,9))
 
 
 # def checking(word1,word2):
