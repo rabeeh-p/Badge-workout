@@ -53,18 +53,17 @@
 # print(current)
 
 
-# swap = lambda s: s[-1] + s[1:-1] + s[0] if len(s) > 1 else s
-# print(swap("rabeeh"))
+swap = lambda s: s[-1] + s[1:-1] + s[0] if len(s) > 1 else s
+print(swap("rabeeh"))
 
 
-# import random
-# print(random.randint(0, 100))
+import random
+print(random.randint(0, 100))
 
 
-
-lst = [[1, 2], [3, 4,2,2,2], [5]]
-flat = [item for sublist in lst for item in sublist]
-print(flat)
+# lst = [[1, 2], [3, 4,2,2,2], [5]]
+# flat = [item for sublist in lst for item in sublist]
+# print(flat)
 
 class HashTable:
     def __init__(self,size=10):
